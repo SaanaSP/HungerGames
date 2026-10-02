@@ -1,0 +1,90 @@
+/*for (int j = 0; j < 8; j++) {
+			Location pos = new Location(Bukkit.getWorld("world"), 1000, 40, 998);
+			if (j == 1) {
+				pos = new Location(Bukkit.getWorld("world"), 1000, 41, 999);
+			} else if (j == 2) {
+				pos = new Location(Bukkit.getWorld("world"), 1002, 40, 1000);
+			} else if (j == 3) {
+				pos = new Location(Bukkit.getWorld("world"), 1001, 41, 1000);
+			} else if (j == 4) {
+				pos = new Location(Bukkit.getWorld("world"), 1000, 40, 1002);
+			} else if (j == 5) {
+				pos = new Location(Bukkit.getWorld("world"), 1000, 41, 1001);
+			} else if (j == 6) {
+				pos = new Location(Bukkit.getWorld("world"), 998, 40, 1000);
+			} else if (j == 7) {
+				pos = new Location(Bukkit.getWorld("world"), 999, 41, 1000);
+			}
+			Chest chest = (Chest) pos.getBlock().getState();
+			Inventory inv = chest.getBlockInventory();
+			chest.getInventory().clear();
+			Random random = new Random();
+			int number = random.nextInt(6);
+			ItemStack weapon = new ItemStack(Material.IRON_SWORD);
+			if (number == 1) {
+				weapon = new ItemStack(Material.WOOD_SWORD);
+			} else if (number == 2) {
+				weapon = new ItemStack(Material.STONE_SWORD);
+			} else if (number == 3) {
+				weapon = new ItemStack(Material.BOW);
+			} else if (number == 4) {
+				weapon = new ItemStack(Material.ARROW, 16);
+			} else if (number == 5) {
+				weapon = new ItemStack(Material.FISHING_ROD);
+			}
+			number = random.nextInt(9);
+			int amount = random.nextInt(3) + 1;
+			ItemStack food = new ItemStack(Material.COOKED_FISH, amount);
+			if (number == 1) {
+				food = new ItemStack(Material.COOKED_FISH, amount, (byte) 1);
+			} else if (number == 2) {
+				food = new ItemStack(Material.GRILLED_PORK, amount);
+			} else if (number == 3) {
+				food = new ItemStack(Material.COOKED_BEEF, amount);
+			} else if (number == 4) {
+				food = new ItemStack(Material.COOKED_CHICKEN, amount);
+			} else if (number == 5) {
+				food = new ItemStack(Material.BAKED_POTATO, amount);
+			} else if (number == 6) {
+				food = new ItemStack(Material.PUMPKIN_PIE, amount);
+			} else if (number == 7) {
+				food = new ItemStack(Material.COOKED_MUTTON, amount);
+			} else if (number == 8) {
+				food = new ItemStack(Material.MELON, amount);
+			}
+			number = random.nextInt(15);
+			ItemStack armour = new ItemStack(Material.LEATHER_HELMET);
+				armour = new ItemStack(Material.LEATHER_CHESTPLATE);
+			if (number == 1) {
+				armour = new ItemStack(Material.LEATHER_LEGGINGS);
+			} else if (number == 2) {
+				armour = new ItemStack(Material.LEATHER_BOOTS);
+			} else if (number == 3) {
+				armour = new ItemStack(Material.CHAINMAIL_HELMET);
+			} else if (number == 4) {
+				armour = new ItemStack(Material.CHAINMAIL_CHESTPLATE);
+			} else if (number == 5) {
+				armour = new ItemStack(Material.CHAINMAIL_LEGGINGS);
+			} else if (number == 6) {
+				armour = new ItemStack(Material.CHAINMAIL_BOOTS);
+			} else if (number == 7) {
+				armour = new ItemStack(Material.IRON_HELMET);
+			} else if (number == 8) {
+				armour = new ItemStack(Material.IRON_CHESTPLATE);
+			} else if (number == 9) {
+				armour = new ItemStack(Material.IRON_LEGGINGS);
+			} else if (number == 10) {
+				armour = new ItemStack(Material.IRON_BOOTS);
+			} else if (number == 11) {
+				armour = new ItemStack(Material.GOLD_HELMET);
+			} else if (number == 12) {
+				armour = new ItemStack(Material.GOLD_CHESTPLATE);
+			} else if (number == 13) {
+				armour = new ItemStack(Material.GOLD_LEGGINGS);
+			} else if (number == 14) {
+				armour = new ItemStack(Material.GOLD_BOOTS);
+			}
+			inv.setItem(random.nextInt(26) + 1, weapon);
+			inv.setItem(random.nextInt(26) + 1, food);
+			inv.setItem(random.nextInt(26) + 1, armour);
+		}*/

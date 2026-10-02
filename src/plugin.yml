@@ -1,0 +1,44 @@
+name: HungerGames
+main: boring.shit.Main
+author: Booni
+version: 1.0
+settings:
+  restart-script: runserver.bat
+  
+commands:
+  start:
+    usage: /<command>
+    permission: manager
+  nick:
+    usage: /<command> <nickname>
+  end:
+    usage: /<command>
+    permission: manager
+  world:
+    usage: /<command> <world>
+  heal:
+    usage: /<command> <target>
+    permission: manager
+  feed:
+    usage: /<command> <target>
+    permission: manager
+  debug:
+    usage: /<command>
+    aliases: [dg, df, as, sd, fg, gh, as, sd]
+  giveitem:
+    usage: /<command> <item>
+    permission: manager
+    aliases: [item]
+  smite:
+    usage: /<command> <target>
+    permission: manager
+  invsee:
+    usage: /<command> <target>
+    permission: manager
+  teams:
+    usage: /<command>
+    permission: manager
+  set:
+    usage: /<command> <setting>
+    permission: manager
+  

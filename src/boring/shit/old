@@ -1,0 +1,64 @@
+		
+		/* Bukkit.getScheduler().runTaskLater(Main.getPlugin(), new Runnable() { @Override public void run() {
+			for (Player p : activeplayers) {
+				p.sendTitle(ChatColor.GREEN + "4", ""); 
+			}
+			Bukkit.getScheduler().runTaskLater(Main.getPlugin(), new Runnable() { @Override public void run() {
+				for (Player p : activeplayers) {
+					p.sendTitle(ChatColor.YELLOW + "3", ""); 
+				}
+				Bukkit.getScheduler().runTaskLater(Main.getPlugin(), new Runnable() { @Override public void run() {
+					for (Player p : activeplayers) {
+						p.sendTitle(ChatColor.YELLOW + "2", ""); 
+					}
+					Bukkit.getScheduler().runTaskLater(Main.getPlugin(), new Runnable() { @Override public void run() {
+						for (Player p : activeplayers) {
+							p.sendTitle(ChatColor.RED + "1", ""); 
+						}
+						Bukkit.getScheduler().runTaskLater(Main.getPlugin(), new Runnable() { @Override public void run() {
+							for (Location i : goldblocks) {
+								i.getBlock().setType(Material.AIR);
+							}
+							for (Player p : activeplayers) {
+								p.sendTitle("", ""); 
+							}
+							for (Player p : activeplayers) {
+								p.setHealth(20);
+								p.setFoodLevel(20);
+								p.setSaturation(5);
+							}
+							Bukkit.getScheduler().runTaskLater(Main.getPlugin(), new Runnable() { @Override public void run() {
+								fillChests();
+								for (Player p : activeplayers) {
+					        		p.sendMessage(ChatColor.YELLOW + "Chests have refilled!");
+					        	}
+							} }, dropwaittime);
+							if (args[0] == "zone") {
+								Bukkit.getScheduler().runTaskLater(Main.getPlugin(), new Runnable() { @Override public void run() {
+									
+								} }, 1800);
+							} else {
+								Bukkit.getScheduler().runTaskLater(Main.getPlugin(), new Runnable() { @Override public void run() {
+									fillChests();
+									for (Player p : activeplayers) {
+						        		p.sendMessage(ChatColor.RED + "Deathmatch in 30 seconds!");
+						        	}
+								} }, 2 * dropwaittime - 600);
+								Bukkit.getScheduler().runTaskLater(Main.getPlugin(), new Runnable() { @Override public void run() {
+									fillChests();
+									for (Player p : activeplayers) {
+						        		p.sendMessage(ChatColor.RED + "Deathmatch in 5 seconds!");
+						        	}
+								} }, 2 * dropwaittime - 100);
+								Bukkit.getScheduler().runTaskLater(Main.getPlugin(), new Runnable() { @Override public void run() {
+									fillChests();
+									for (Player p : activeplayers) {
+						        		p.sendMessage(ChatColor.RED + "Starting Deathmatch");
+						        	}
+								} }, 2 * dropwaittime);
+							}
+						} }, 25L);
+					} }, 25L);
+				} }, 25L);
+			} }, 25L);
+		} }, 25L); */
